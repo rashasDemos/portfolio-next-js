@@ -710,7 +710,7 @@ function GenresSelected() {
 
 async function fetchPage(selectedGenres) {
 
-  const res = await fetch(`${`/${selectedGenres}.json`}`);
+  const res = await fetch(`${`https://raw.githubusercontent.com/rashasDemos/portfolio-next-js/master/public/%40api/${selectedGenres}.json`}`);
   const data = await res.json();
   return data;
 }
