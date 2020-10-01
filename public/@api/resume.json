@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "created_by": {
+      "id": 1,
+      "firstname": "Rasha",
+      "lastname": "Rahman",
+      "username": null
+    },
+    "updated_by": {
+      "id": 1,
+      "firstname": "Rasha",
+      "lastname": "Rahman",
+      "username": null
+    },
+    "created_at": "2020-09-02T02:19:22.507Z",
+    "updated_at": "2020-09-04T02:43:35.564Z",
+    "Education": [
+      {
+        "id": 2,
+        "schoolName": "Long Beach City College (LBCC)",
+        "major": "Transfer as Computer Science BS",
+        "timeSpent": "Fall 2016 - Summer 2018"
+      },
+      {
+        "id": 1,
+        "schoolName": "University of California, Los Angeles (UCLA)",
+        "major": "Psychology BA",
+        "timeSpent": "Fall 2018 - Fall 2020"
+      }
+    ],
+    "Skillset": [
+      {
+        "id": 1,
+        "field": "Digital Product Engineering",
+        "subfields": "Front End Development",
+        "experience": "circa 2016",
+        "tools": "Webpack, React Router, REST API, Git, useState/useEffect, Context, Styling with:[[ StyledComponent, Inline CSS (jsx), Emotion, Rebass]], Framer Motion, and (understand OOP (Java))"
+      },
+      {
+        "id": 2,
+        "field": "Media Editing",
+        "subfields": "Audio-Visual",
+        "experience": "circa 2013",
+        "tools": "Ableton, Audacity, Illustrator, Photoshop, After Effects, Premiere Pro, FL Studio, Waves VSTS, iZotope, Arturia, Figma, Pixlr, Framer, Logic, Final Cut Pro, Sony Vegas Pro, Podcast Recording, Audio Engineering"
+      }
+    ],
+    "Work": [
+      
+      {
+        "id": 2,
+        "company": "Freelance Development",
+        "jobTitle": "Freelance Web Dev",
+        "timeSpent": "June 2016 - present",
+        "mainDesc": "Create functioning websites for private clients with specific guidelines and boundaries set. Extensive communication required to ensure product is what the client wanted. Used multiple CMS's, have also used React.",
+        "Responsibilities": [
+          {
+            "id": 1,
+            "task": "Discussed all details require for project with clients"
+          },
+          {
+            "id": 2,
+            "task": "Proper communication and updates to client for their well being. (Dont like leaving peope on hold)"
+          },
+          { "id": 4, "task": "Created proper invoices for client." },
+          {
+            "id": 5,
+            "task": "Negotiated proper rates for my time and worth."
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "company": "Verizon (victra)",
+        "jobTitle": "Retail Sales Consultant",
+        "timeSpent": "Fall 2017 - Fall 2018",
+        "mainDesc": "Responsible for selling a full range of telecommunications products and services to our guests in a professional and guest-friendly approach. I had to multitask, display basic math skills, have flexibility to work retail hours, display excellent sales skills, and analytical skills.",
+        "Responsibilities": [
+          {
+            "id": 1,
+            "task": "Created relationships with local customers for sales"
+          },
+          {
+            "id": 2,
+            "task": "Ranked #1 multiple months within district as top salesman"
+          },
+          { "id": 4, "task": "Cleaned store daily with routine" },
+          {
+            "id": 5,
+            "task": "Collect daily inventory and ship out returns and trade-ins"
+          },
+          {
+            "id": 6,
+            "task": "Offer a variety of financial services based on what the customer needed"
+          },
+          { "id": 3, "task": "Extremely competitive workfield" }
+        ]
+      }
+    ]
+  }
+]

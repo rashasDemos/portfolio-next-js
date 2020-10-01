@@ -1,0 +1,804 @@
+[
+  {
+    "id": 1,
+    "headline": "20",
+    "process": "/projects/ed",
+    "showcase": "https://kingkb2400.bandcamp.com/album/ego-death",
+    "desc": "A birthday gift for my loved one.",
+    "linkMessage": "Listen on Bandcamp Here",
+    "sourceURL": "",
+    "longDesc": "## 10 songs to represent my feelings for her... theres a lot of them. \n Amazing amazing feelings for this person who has just turned 20. I wish her all the best for her twenties and to have a healthy, exhilerating, and peaceful lifestyle.",
+    "genre": {
+      "id": 2,
+      "label": "music",
+      "slug": "music",
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2020-08-23T06:23:41.818Z",
+      "updated_at": "2020-08-23T06:23:41.823Z"
+    },
+    "slug": "ego-death",
+    "displayImageAlt": null,
+    "created_by": {
+      "id": 1,
+      "firstname": "Rasha",
+      "lastname": "Rahman",
+      "username": null
+    },
+    "updated_by": {
+      "id": 1,
+      "firstname": "Rasha",
+      "lastname": "Rahman",
+      "username": null
+    },
+    "created_at": "2020-08-20T08:54:46.276Z",
+    "updated_at": "2020-09-06T00:25:13.373Z",
+    "displayImage": {
+      "id": 3,
+      "name": "COVER ART.jpg",
+      "alternativeText": "",
+      "caption": "",
+      "width": 2307,
+      "height": 2307,
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_COVER ART.jpg",
+          "hash": "thumbnail_COVER_ART_6e9fe9bb45",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "width": 156,
+          "height": 156,
+          "size": 4.28,
+          "path": null,
+          "url": "/uploads/thumbnail_COVER_ART_6e9fe9bb45.jpg"
+        },
+        "large": {
+          "name": "large_COVER ART.jpg",
+          "hash": "large_COVER_ART_6e9fe9bb45",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "width": 1000,
+          "height": 1000,
+          "size": 304.05,
+          "path": null,
+          "url": "/uploads/large_COVER_ART_6e9fe9bb45.jpg"
+        },
+        "medium": {
+          "name": "medium_COVER ART.jpg",
+          "hash": "medium_COVER_ART_6e9fe9bb45",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "width": 750,
+          "height": 750,
+          "size": 147.97,
+          "path": null,
+          "url": "/uploads/medium_COVER_ART_6e9fe9bb45.jpg"
+        },
+        "small": {
+          "name": "small_COVER ART.jpg",
+          "hash": "small_COVER_ART_6e9fe9bb45",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "width": 500,
+          "height": 500,
+          "size": 54.05,
+          "path": null,
+          "url": "/uploads/small_COVER_ART_6e9fe9bb45.jpg"
+        }
+      },
+      "hash": "COVER_ART_6e9fe9bb45",
+      "ext": ".jpg",
+      "mime": "image/jpeg",
+      "size": 2463.95,
+      "url": "/uploads/COVER_ART_6e9fe9bb45.jpg",
+      "previewUrl": null,
+      "provider": "local",
+      "provider_metadata": null,
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2020-08-20T08:53:20.672Z",
+      "updated_at": "2020-08-20T08:53:20.705Z"
+    },
+    "technologies": [
+      {
+        "id": 9,
+        "Title": "Rode NT1A",
+        "slug": "rode-nt1a",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-23T16:28:32.098Z",
+        "updated_at": "2020-08-23T16:28:32.105Z"
+      },
+      {
+        "id": 4,
+        "Title": "Adobe CC",
+        "slug": "adobe",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-23T16:23:47.908Z",
+        "updated_at": "2020-08-23T16:23:47.913Z"
+      },
+      {
+        "id": 8,
+        "Title": "Scarlett 2i2",
+        "slug": "scarlett",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-23T16:28:24.258Z",
+        "updated_at": "2020-08-23T16:28:24.266Z"
+      },
+      {
+        "id": 1,
+        "Title": "Ableton Live 10 Suite",
+        "slug": "ableton",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-23T16:22:44.827Z",
+        "updated_at": "2020-08-23T16:22:44.835Z"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "headline": "Pixel Psychology",
+    "process": "/projects/pp",
+    "showcase": null,
+    "desc": "A pseudo-research-entertainment company that focuses on catering towards Minecraft players and content viewers.",
+    "linkMessage": "Available Soon",
+    "sourceURL": null,
+    "longDesc": "## If you can imagine it, you can imagine it in Minecraft\nA few months ago, me and my buddy Nick Ramirez wanted to create something that we could generate data from. I am not a data scientist at all but I taught myself SQL and R along the way so does that mean I am now? (just kidding I am very novel experienced)\n\n\n\n*Anyways*, we wanted to conduct psychological experiments inside of Minecraft and see if we could replicate some of the results found in real life. We are still working on this and more information will be available soon.\n",
+    "genre": {
+      "id": 3,
+      "label": "psychology",
+      "slug": "psychology",
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2020-08-23T06:23:52.820Z",
+      "updated_at": "2020-08-23T06:23:59.885Z"
+    },
+    "slug": "pixel-psychology",
+    "displayImageAlt": null,
+    "created_by": {
+      "id": 1,
+      "firstname": "Rasha",
+      "lastname": "Rahman",
+      "username": null
+    },
+    "updated_by": {
+      "id": 1,
+      "firstname": "Rasha",
+      "lastname": "Rahman",
+      "username": null
+    },
+    "created_at": "2020-08-20T08:57:06.102Z",
+    "updated_at": "2020-09-06T00:25:18.534Z",
+    "displayImage": {
+      "id": 4,
+      "name": "Untitled (7).jpg",
+      "alternativeText": "",
+      "caption": "",
+      "width": 453,
+      "height": 453,
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_Untitled (7).jpg",
+          "hash": "thumbnail_Untitled_7_5982cb781a",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "width": 156,
+          "height": 156,
+          "size": 43.01,
+          "path": null,
+          "url": "/uploads/thumbnail_Untitled_7_5982cb781a.jpg"
+        }
+      },
+      "hash": "Untitled_7_5982cb781a",
+      "ext": ".jpg",
+      "mime": "image/jpeg",
+      "size": 254.09,
+      "url": "/uploads/Untitled_7_5982cb781a.jpg",
+      "previewUrl": null,
+      "provider": "local",
+      "provider_metadata": null,
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2020-08-20T08:55:30.516Z",
+      "updated_at": "2020-08-22T21:46:21.389Z"
+    },
+    "technologies": [
+      {
+        "id": 12,
+        "Title": "Node.js",
+        "slug": "node",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-23T16:34:21.354Z",
+        "updated_at": "2020-08-23T16:34:21.360Z"
+      },
+      {
+        "id": 15,
+        "Title": "express",
+        "slug": "express-library",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-23T16:42:45.861Z",
+        "updated_at": "2020-08-23T16:42:45.868Z"
+      },
+      {
+        "id": 13,
+        "Title": "R (CRAN)",
+        "slug": "cran",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-23T16:34:28.005Z",
+        "updated_at": "2020-08-23T16:34:28.015Z"
+      },
+      {
+        "id": 10,
+        "Title": "java",
+        "slug": "java",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-23T16:28:47.179Z",
+        "updated_at": "2020-08-23T16:28:47.186Z"
+      },
+      {
+        "id": 11,
+        "Title": "SQL",
+        "slug": "sql",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-23T16:34:10.439Z",
+        "updated_at": "2020-08-23T16:34:10.450Z"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "headline": "Grab or Half",
+    "process": "/projects/gof",
+    "showcase": "/projects/testt3",
+    "desc": "A logical game built upon chance. With only two options, do you share the award or take it all for yourself?",
+    "linkMessage": null,
+    "sourceURL": null,
+    "longDesc": "## If I could get $100 every time I had to read about the\nprisoner's dilemma study, then I would be probably a decent Python coder that figured out how to mine through all my lectures for it. Jokes aside, it was one of the best studies because it helped showcase the power of logic in our minds. Here is how my game works based off that study.\n### Game Instructions:\n1.  You will be given an offer from the website for virtual tokens\n2. The token amount can range from **0-1000**\n3. You and the bot will then have a limited time to chooses between grab or half\n4. If you choose **grab**:\n    - If the bot chooses half, it will lose the game and you will be rewarded the whole offer\n    - If the bot chooses grab, it is game over for both of you\n5. If you choose **half**:\n    - If the bot chooses half, you will be rewarded half the offer\n    - If the bot chooses grab, it is game over for you\n6. After every round, the game will allow you to move onto a new offer or start a new game if you have lost\n7. The bot chooses each option 50% of the time, so this is truly a chance based game.\n8. Have fun!\n\n",
+    "genre": {
+      "id": 1,
+      "label": "web dev",
+      "slug": "web-dev",
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2020-08-23T06:23:33.472Z",
+      "updated_at": "2020-08-26T02:13:09.070Z"
+    },
+    "slug": "grab-or-half",
+    "displayImageAlt": null,
+    "created_by": {
+      "id": 1,
+      "firstname": "Rasha",
+      "lastname": "Rahman",
+      "username": null
+    },
+    "updated_by": {
+      "id": 1,
+      "firstname": "Rasha",
+      "lastname": "Rahman",
+      "username": null
+    },
+    "created_at": "2020-08-22T21:44:41.978Z",
+    "updated_at": "2020-09-06T00:25:16.232Z",
+    "displayImage": {
+      "id": 5,
+      "name": "download.jpeg",
+      "alternativeText": "",
+      "caption": "",
+      "width": 1643,
+      "height": 1644,
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_download.jpeg",
+          "hash": "thumbnail_download_d31a5be4c0",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 156,
+          "height": 156,
+          "size": 46.24,
+          "path": null,
+          "url": "/uploads/thumbnail_download_d31a5be4c0.jpeg"
+        },
+        "large": {
+          "name": "large_download.jpeg",
+          "hash": "large_download_d31a5be4c0",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 999,
+          "height": 1000,
+          "size": 835.88,
+          "path": null,
+          "url": "/uploads/large_download_d31a5be4c0.jpeg"
+        },
+        "medium": {
+          "name": "medium_download.jpeg",
+          "hash": "medium_download_d31a5be4c0",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 750,
+          "height": 750,
+          "size": 536.18,
+          "path": null,
+          "url": "/uploads/medium_download_d31a5be4c0.jpeg"
+        },
+        "small": {
+          "name": "small_download.jpeg",
+          "hash": "small_download_d31a5be4c0",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "width": 500,
+          "height": 500,
+          "size": 286.71,
+          "path": null,
+          "url": "/uploads/small_download_d31a5be4c0.jpeg"
+        }
+      },
+      "hash": "download_d31a5be4c0",
+      "ext": ".jpeg",
+      "mime": "image/jpeg",
+      "size": 1357.1,
+      "url": "/uploads/download_d31a5be4c0.jpeg",
+      "previewUrl": null,
+      "provider": "local",
+      "provider_metadata": null,
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2020-08-23T03:14:26.327Z",
+      "updated_at": "2020-08-23T03:15:09.610Z"
+    },
+    "technologies": [
+      {
+        "id": 2,
+        "Title": "React.JS",
+        "slug": "react",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-23T16:23:28.768Z",
+        "updated_at": "2020-08-23T16:23:28.776Z"
+      },
+      {
+        "id": 14,
+        "Title": "StyledComponents",
+        "slug": "styledcomponents",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-23T16:34:51.343Z",
+        "updated_at": "2020-08-23T16:34:51.350Z"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "headline": "Rasha.world",
+    "process": "/projects/rw",
+    "showcase": null,
+    "desc": "They said i needed a website, so I made one while also challenging myself to learn next.js",
+    "linkMessage": null,
+    "sourceURL": null,
+    "longDesc": "Next.js is a wonderful tool to use React in an ever more efficient way. I love the way the router is set up for easy control switches especially with the `as` functionality. I love the server side rendering speed, it is amazing.",
+    "genre": {
+      "id": 1,
+      "label": "web dev",
+      "slug": "web-dev",
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2020-08-23T06:23:33.472Z",
+      "updated_at": "2020-08-26T02:13:09.070Z"
+    },
+    "slug": "rasha-world",
+    "displayImageAlt": null,
+    "created_by": {
+      "id": 1,
+      "firstname": "Rasha",
+      "lastname": "Rahman",
+      "username": null
+    },
+    "updated_by": {
+      "id": 1,
+      "firstname": "Rasha",
+      "lastname": "Rahman",
+      "username": null
+    },
+    "created_at": "2020-08-23T04:16:02.236Z",
+    "updated_at": "2020-09-06T00:25:21.050Z",
+    "displayImage": {
+      "id": 7,
+      "name": "Screen Shot 2020-08-22 at 9.15.44 PM.png",
+      "alternativeText": "",
+      "caption": "",
+      "width": 710,
+      "height": 710,
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_Screen Shot 2020-08-22 at 9.15.44 PM.png",
+          "hash": "thumbnail_Screen_Shot_2020_08_22_at_9_15_44_PM_4eab39d8bd",
+          "ext": ".png",
+          "mime": "image/png",
+          "width": 156,
+          "height": 156,
+          "size": 13.14,
+          "path": null,
+          "url": "/uploads/thumbnail_Screen_Shot_2020_08_22_at_9_15_44_PM_4eab39d8bd.png"
+        },
+        "small": {
+          "name": "small_Screen Shot 2020-08-22 at 9.15.44 PM.png",
+          "hash": "small_Screen_Shot_2020_08_22_at_9_15_44_PM_4eab39d8bd",
+          "ext": ".png",
+          "mime": "image/png",
+          "width": 500,
+          "height": 500,
+          "size": 207.89,
+          "path": null,
+          "url": "/uploads/small_Screen_Shot_2020_08_22_at_9_15_44_PM_4eab39d8bd.png"
+        }
+      },
+      "hash": "Screen_Shot_2020_08_22_at_9_15_44_PM_4eab39d8bd",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 109.82,
+      "url": "/uploads/Screen_Shot_2020_08_22_at_9_15_44_PM_4eab39d8bd.png",
+      "previewUrl": null,
+      "provider": "local",
+      "provider_metadata": null,
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2020-08-23T04:15:54.873Z",
+      "updated_at": "2020-08-23T04:15:54.901Z"
+    },
+    "technologies": [
+      {
+        "id": 14,
+        "Title": "StyledComponents",
+        "slug": "styledcomponents",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-23T16:34:51.343Z",
+        "updated_at": "2020-08-23T16:34:51.350Z"
+      },
+      {
+        "id": 5,
+        "Title": "@emotion",
+        "slug": "emotion-library",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-23T16:24:18.216Z",
+        "updated_at": "2020-08-23T16:24:18.223Z"
+      },
+      {
+        "id": 6,
+        "Title": "Rebass",
+        "slug": "rebass-library",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-23T16:24:33.050Z",
+        "updated_at": "2020-08-23T16:24:33.055Z"
+      },
+      {
+        "id": 16,
+        "Title": "Strapi",
+        "slug": "strapi",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-23T17:03:14.815Z",
+        "updated_at": "2020-08-23T17:03:14.824Z"
+      },
+      {
+        "id": 3,
+        "Title": "Next.js",
+        "slug": "next",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-23T16:23:38.820Z",
+        "updated_at": "2020-08-23T16:23:38.825Z"
+      },
+      {
+        "id": 17,
+        "Title": "isom-unfetch",
+        "slug": "isomorphic",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-23T17:03:51.960Z",
+        "updated_at": "2020-08-24T07:10:34.497Z"
+      },
+      {
+        "id": 21,
+        "Title": "Context API",
+        "slug": "context-api",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-23T19:50:04.281Z",
+        "updated_at": "2020-08-23T19:50:04.286Z"
+      },
+      {
+        "id": 22,
+        "Title": "Framer Motion",
+        "slug": "framer-motion",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-31T05:22:17.025Z",
+        "updated_at": "2020-08-31T05:22:17.039Z"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "headline": "Spotify.random",
+    "process": "/projects/sr",
+    "showcase": null,
+    "desc": "Be the DJ and find the music that fits your tastes, get new results every time. Uses the Spotify Web API.",
+    "linkMessage": null,
+    "sourceURL": null,
+    "longDesc": "## Have you ever wanted to change something about a song that would have made it perfect?\nThis is your chance. With Spotify.random, we made an interactive virtual DJ board that lets you setup a fully customized Spotify music search tool. If you want an aggressive ballad or slow j-pop, we gotchu.\n\n#### Thank you to my team at UCLA Creative Labs Spring 2020 for helping create this app and helping me with my vision.\nHere are a couple pictures from the prototype:\n```SPOTIFY.RANDOM UCLA```\n**The DJ Board**\n- ![board not lit up.png](/uploads/board_not_lit_up_dc6a8b98c6.png)\n\n**Some of its controls**\n- ![right corner 5.png](/uploads/right_corner_5_4aa0c8dfa8.png)\n\n **When you find the perfect song, you get to have a dance party with our animals :)**\n- ![result page 3.png](/uploads/result_page_3_a0490e638a.png)\n",
+    "genre": {
+      "id": 1,
+      "label": "web dev",
+      "slug": "web-dev",
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2020-08-23T06:23:33.472Z",
+      "updated_at": "2020-08-26T02:13:09.070Z"
+    },
+    "slug": "spotify-random",
+    "displayImageAlt": null,
+    "created_by": {
+      "id": 1,
+      "firstname": "Rasha",
+      "lastname": "Rahman",
+      "username": null
+    },
+    "updated_by": {
+      "id": 1,
+      "firstname": "Rasha",
+      "lastname": "Rahman",
+      "username": null
+    },
+    "created_at": "2020-08-23T19:48:56.265Z",
+    "updated_at": "2020-09-06T00:25:23.367Z",
+    "displayImage": {
+      "id": 9,
+      "name": "intro 1.png",
+      "alternativeText": "",
+      "caption": "",
+      "width": 833,
+      "height": 832,
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_intro 1.png",
+          "hash": "thumbnail_intro_1_dd0c12d834",
+          "ext": ".png",
+          "mime": "image/png",
+          "width": 156,
+          "height": 156,
+          "size": 20.29,
+          "path": null,
+          "url": "/uploads/thumbnail_intro_1_dd0c12d834.png"
+        },
+        "medium": {
+          "name": "medium_intro 1.png",
+          "hash": "medium_intro_1_dd0c12d834",
+          "ext": ".png",
+          "mime": "image/png",
+          "width": 750,
+          "height": 749,
+          "size": 327.86,
+          "path": null,
+          "url": "/uploads/medium_intro_1_dd0c12d834.png"
+        },
+        "small": {
+          "name": "small_intro 1.png",
+          "hash": "small_intro_1_dd0c12d834",
+          "ext": ".png",
+          "mime": "image/png",
+          "width": 500,
+          "height": 499,
+          "size": 149.15,
+          "path": null,
+          "url": "/uploads/small_intro_1_dd0c12d834.png"
+        }
+      },
+      "hash": "intro_1_dd0c12d834",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 243.81,
+      "url": "/uploads/intro_1_dd0c12d834.png",
+      "previewUrl": null,
+      "provider": "local",
+      "provider_metadata": null,
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2020-08-23T19:39:41.371Z",
+      "updated_at": "2020-08-23T19:40:16.315Z"
+    },
+    "technologies": [
+      {
+        "id": 2,
+        "Title": "React.JS",
+        "slug": "react",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-23T16:23:28.768Z",
+        "updated_at": "2020-08-23T16:23:28.776Z"
+      },
+      {
+        "id": 7,
+        "Title": "Figma",
+        "slug": "figma",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-23T16:24:53.658Z",
+        "updated_at": "2020-08-23T16:24:53.664Z"
+      },
+      {
+        "id": 18,
+        "Title": "Blender",
+        "slug": "blender",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-23T19:49:12.594Z",
+        "updated_at": "2020-08-23T19:49:12.602Z"
+      },
+      {
+        "id": 19,
+        "Title": "Three.JS",
+        "slug": "three-js",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-23T19:49:32.643Z",
+        "updated_at": "2020-08-23T19:49:32.649Z"
+      },
+      {
+        "id": 20,
+        "Title": "Redux",
+        "slug": "redux",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-23T19:49:59.249Z",
+        "updated_at": "2020-08-23T19:49:59.256Z"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "headline": "Trivia Reactor",
+    "process": "/projects/sr",
+    "showcase": null,
+    "desc": "Practice your trivia while trying to balance your score. Uses the Trivia DB API.",
+    "linkMessage": null,
+    "sourceURL": null,
+    "longDesc": "",
+    "genre": {
+      "id": 1,
+      "label": "web dev",
+      "slug": "web-dev",
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2020-08-23T06:23:33.472Z",
+      "updated_at": "2020-08-26T02:13:09.070Z"
+    },
+    "slug": "trivia-reactor",
+    "displayImageAlt": null,
+    "created_by": {
+      "id": 1,
+      "firstname": "Rasha",
+      "lastname": "Rahman",
+      "username": null
+    },
+    "updated_by": {
+      "id": 1,
+      "firstname": "Rasha",
+      "lastname": "Rahman",
+      "username": null
+    },
+    "created_at": "2020-08-23T19:48:56.265Z",
+    "updated_at": "2020-09-06T00:25:23.367Z",
+    "displayImage": {
+      "id": 9,
+      "name": "intro 1.png",
+      "alternativeText": "",
+      "caption": "",
+      "width": 833,
+      "height": 832,
+      "formats": {
+        "thumbnail": {
+          "name": "thumbnail_intro 1.png",
+          "hash": "thumbnail_intro_1_dd0c12d834",
+          "ext": ".png",
+          "mime": "image/png",
+          "width": 156,
+          "height": 156,
+          "size": 20.29,
+          "path": null,
+          "url": "/uploads/thumbnail_intro_1_dd0c12d834.png"
+        },
+        "medium": {
+          "name": "medium_intro 1.png",
+          "hash": "medium_intro_1_dd0c12d834",
+          "ext": ".png",
+          "mime": "image/png",
+          "width": 750,
+          "height": 749,
+          "size": 327.86,
+          "path": null,
+          "url": "/uploads/medium_intro_1_dd0c12d834.png"
+        },
+        "small": {
+          "name": "small_intro 1.png",
+          "hash": "small_intro_1_dd0c12d834",
+          "ext": ".png",
+          "mime": "image/png",
+          "width": 500,
+          "height": 499,
+          "size": 149.15,
+          "path": null,
+          "url": "/uploads/small_intro_1_dd0c12d834.png"
+        }
+      },
+      "hash": "intro_1_dd0c12d834",
+      "ext": ".png",
+      "mime": "image/png",
+      "size": 243.81,
+      "url": "/uploads/intro_1_dd0c12d834.png",
+      "previewUrl": null,
+      "provider": "local",
+      "provider_metadata": null,
+      "created_by": 1,
+      "updated_by": 1,
+      "created_at": "2020-08-23T19:39:41.371Z",
+      "updated_at": "2020-08-23T19:40:16.315Z"
+    },
+    "technologies": [
+      {
+        "id": 2,
+        "Title": "React.JS",
+        "slug": "react",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-23T16:23:28.768Z",
+        "updated_at": "2020-08-23T16:23:28.776Z"
+      },
+      {
+        "id": 7,
+        "Title": "Figma",
+        "slug": "figma",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-23T16:24:53.658Z",
+        "updated_at": "2020-08-23T16:24:53.664Z"
+      },
+      {
+        "id": 18,
+        "Title": "Blender",
+        "slug": "blender",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-23T19:49:12.594Z",
+        "updated_at": "2020-08-23T19:49:12.602Z"
+      },
+      {
+        "id": 19,
+        "Title": "Three.JS",
+        "slug": "three-js",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-23T19:49:32.643Z",
+        "updated_at": "2020-08-23T19:49:32.649Z"
+      },
+      {
+        "id": 20,
+        "Title": "Redux",
+        "slug": "redux",
+        "created_by": 1,
+        "updated_by": 1,
+        "created_at": "2020-08-23T19:49:59.249Z",
+        "updated_at": "2020-08-23T19:49:59.256Z"
+      }
+    ]
+  }
+]
