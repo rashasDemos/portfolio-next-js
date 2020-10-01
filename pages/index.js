@@ -10,6 +10,7 @@ import styled from "@emotion/styled";
 import { NextSeo } from 'next-seo'
 
 export default function Index() {
+    console.log(process.env.domain, process.env.title, process.env.projects)
   var rooter = useRouter();
   useEffect(() => {
     console.log(rooter);
@@ -708,7 +709,7 @@ function GenresSelected() {
 }
 
 async function fetchPage(selectedGenres) {
-  console.log(process.env.domain, process.env.title, process.env.projects)
+
   const res = await fetch(`${process.env.projects + `/${selectedGenres}.json`}`);
   const data = await res.json();
   return data;
