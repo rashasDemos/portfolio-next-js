@@ -708,7 +708,8 @@ function GenresSelected() {
 }
 
 async function fetchPage(selectedGenres) {
-  const res = await fetch(`${process.env.domain + `@api/${selectedGenres}.json`}`);
+  console.log(process.env.domain, process.env.title, process.env.projects)
+  const res = await fetch(`${process.env.projects + `/${selectedGenres}.json`}`);
   const data = await res.json();
   return data;
 }
