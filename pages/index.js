@@ -59,7 +59,7 @@ const HomePage = memo(() => {
   const socialLinks = [
     {
       id: "1",
-      title: "E-Mail",
+      title: "email",
       url: "mailto:rasha.r.rahman@gmail.com",
     },
     {
@@ -123,10 +123,11 @@ const HomePage = memo(() => {
           </Flex>
           <Flex>
             <Box mx={2.5} mt={3} mb={1}>
-              <Flex justifyContent="space-around" alignItems="center">
+              <Flex justifyContent="space-between" alignItems="center">
                 {socialLinks.map((x) => (
                   <Box
                     backgroundColor={"#1F282F"}
+                    
                     onClick={() => window.location.assign(x.url)}
                     sx={{
                       borderRadius: 5,
@@ -136,23 +137,18 @@ const HomePage = memo(() => {
                       },
                     }}
                     color={"white"}
-                    p={1}
+                    p={[0.5,1]}
+                    
                     mr={2}
-                    as="h3"
+                    as='h6'
                   >
                     {x.title}
                   </Box>
                 ))}
-                <Box mr={2} as="h3">
-                  -
+                <Box mr={2} as="h3" fontSize={['1em','0.7em','1em','1em','1em']}>
+                  - Based in Los Angeles - Currently @ UCLA
                 </Box>
-                <Box mr={2} as="h3">
-                  Based in Los Angeles
-                </Box>
-                <Box mr={2} as="h3">
-                  -
-                </Box>
-                <Box as="h3">Currently @ UCLA</Box>
+               
               </Flex>
             </Box>
           </Flex>
@@ -296,7 +292,7 @@ const HomePage = memo(() => {
             padding: 0;
             margin: 0;
             min-height: 98vh;
-            background-image: url("http://localhost:3000/so-white.png");
+            background-image: url("${process.env.domain + `so-white.png`}");
             background-repeat: repeat;
             font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
               Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
@@ -540,7 +536,9 @@ function GenresSelected() {
                       >
                         {x.Responsibilities[0] && "Responsibilities"}
                       </Box>
-                      <ul>
+                      <ul style={{
+                        listStyleType: 'square'          
+                      }}>
                         {x.Responsibilities.map((y) => (
                           <li key={y.id}>{y.task}</li>
                         ))}
@@ -555,8 +553,10 @@ function GenresSelected() {
       return pageData;
     case "projects":
       pageData = (
-        <Flex>
-          <Flex mr={75} flexDirection="column">
+        <Flex flexDirection={['column','row','row']}>
+          <Flex mr={75} sx={{
+            display: ['none', 'none', 'unset']
+          }} flexDirection="column">
             {" "}
             <Box my={10} mt={3} as={"h1"}>
               Projects
@@ -708,7 +708,7 @@ function GenresSelected() {
 }
 
 async function fetchPage(selectedGenres) {
-  const res = await fetch(`http://localhost:3000/@api/${selectedGenres}.json`);
+  const res = await fetch(`${process.env.domain + `@api/${selectedGenres}.json`}`);
   const data = await res.json();
   return data;
 }

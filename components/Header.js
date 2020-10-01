@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Box, Flex } from "rebass";
+import styled from "@emotion/styled";
 
 export function Logo() {
   return (
@@ -12,6 +13,14 @@ export function Logo() {
 }
 
 export default function Header({ headlines, setGenreSelection }) {
+  const HeaderStyled = styled.div`a {
+    text-decoration: none;
+    color: unset;
+  }
+  
+  a:hover {
+    color: navy;
+  }`
   var rand = headlines && Math.round(Math.random() * headlines.length);
   rand && headlines[rand] && console.log(rand, headlines[rand])
   const router = useRouter();
@@ -71,14 +80,11 @@ export default function Header({ headlines, setGenreSelection }) {
               Go Back
             </Box>
 
-            <Link
-              href={`/project/[slug].js`}
-              as={`/project/${headlines[rand ? rand : 0]}`}
-            >
-              <a>
-                <Box mx={2}>Shuffle Project</Box>
-              </a>
-            </Link>
+            <Box>
+        <HeaderStyled>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" className="twitter-share-button" data-text="I love this project on rasha.world!" data-via="raaahhh_sha" data-show-count="false">Share This</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </HeaderStyled>
+            </Box>
           </Flex>
         )}
       </Box>

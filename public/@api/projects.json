@@ -35,7 +35,7 @@
     "updated_at": "2020-09-06T00:25:13.373Z",
     "displayImage": {
       "id": 3,
-      "name": "COVER ART.jpg",
+      "name": "20_1.png",
       "alternativeText": "",
       "caption": "",
       "width": 2307,
@@ -174,7 +174,7 @@
     "updated_at": "2020-09-06T00:25:18.534Z",
     "displayImage": {
       "id": 4,
-      "name": "Untitled (7).jpg",
+      "name": "pp_1.png",
       "alternativeText": "",
       "caption": "",
       "width": 453,
@@ -289,7 +289,7 @@
     "updated_at": "2020-09-06T00:25:16.232Z",
     "displayImage": {
       "id": 5,
-      "name": "download.jpeg",
+      "name": "gh_1.png",
       "alternativeText": "",
       "caption": "",
       "width": 1643,
@@ -379,10 +379,10 @@
     "headline": "Rasha.world",
     "process": "/projects/rw",
     "showcase": null,
-    "desc": "They said i needed a website, so I made one while also challenging myself to learn next.js",
+    "desc": "They said I needed a website, so I made one while also challenging myself to learn next.js",
     "linkMessage": null,
     "sourceURL": null,
-    "longDesc": "Next.js is a wonderful tool to use React in an ever more efficient way. I love the way the router is set up for easy control switches especially with the `as` functionality. I love the server side rendering speed, it is amazing.",
+    "longDesc": "Next.js is a wonderful tool to use React in an ever more efficient way. I love the way the router is set up for easy control switches especially with the `as` functionality. I also love the server side rendering speed, it is amazing. This website also uses functionality from Rebass to deal with flex and css. It is themed with Styled from @emotion/core and fetches using Isomorphic Unfetch.",
     "genre": {
       "id": 1,
       "label": "web dev",
@@ -410,7 +410,7 @@
     "updated_at": "2020-09-06T00:25:21.050Z",
     "displayImage": {
       "id": 7,
-      "name": "Screen Shot 2020-08-22 at 9.15.44 PM.png",
+      "name": "rw_1.png",
       "alternativeText": "",
       "caption": "",
       "width": 710,
@@ -535,7 +535,7 @@
     "desc": "Be the DJ and find the music that fits your tastes, get new results every time. Uses the Spotify Web API.",
     "linkMessage": null,
     "sourceURL": null,
-    "longDesc": "## Have you ever wanted to change something about a song that would have made it perfect?\nThis is your chance. With Spotify.random, we made an interactive virtual DJ board that lets you setup a fully customized Spotify music search tool. If you want an aggressive ballad or slow j-pop, we gotchu.\n\n#### Thank you to my team at UCLA Creative Labs Spring 2020 for helping create this app and helping me with my vision.\nHere are a couple pictures from the prototype:\n```SPOTIFY.RANDOM UCLA```\n**The DJ Board**\n- ![board not lit up.png](/uploads/board_not_lit_up_dc6a8b98c6.png)\n\n**Some of its controls**\n- ![right corner 5.png](/uploads/right_corner_5_4aa0c8dfa8.png)\n\n **When you find the perfect song, you get to have a dance party with our animals :)**\n- ![result page 3.png](/uploads/result_page_3_a0490e638a.png)\n",
+    "longDesc": "## Have you ever wanted to change something about a song that would have made it perfect?\nThis is your chance. With Spotify.random, we made an interactive virtual DJ board that lets you setup a fully customized Spotify music search tool. If you want an aggressive ballad or slow j-pop, we gotchu.\n\n#### Thank you to my team at UCLA Creative Labs Spring 2020 for helping create this app and helping me with my vision.",
     "genre": {
       "id": 1,
       "label": "web dev",
@@ -563,7 +563,7 @@
     "updated_at": "2020-09-06T00:25:23.367Z",
     "displayImage": {
       "id": 9,
-      "name": "intro 1.png",
+      "name": "sr_1.png",
       "alternativeText": "",
       "caption": "",
       "width": 833,
@@ -672,7 +672,7 @@
     "desc": "Practice your trivia while trying to balance your score. Uses the Trivia DB API.",
     "linkMessage": null,
     "sourceURL": null,
-    "longDesc": "",
+    "longDesc": "This game I made in javascript uses Next.JS as its framework. The game was originally inspired by the trending video game `Among Us`. I wanted to create a game where indiviudals had to finish tasks before time was out, and I found the Trivia DB API which helped this situation a lot. I was able to fetch questions and validate the proper answer. If you do not get the question right, the game gives you two more chances. After those chances, you will either take damage to that specific room of questions or heal the room.",
     "genre": {
       "id": 1,
       "label": "web dev",
@@ -700,14 +700,14 @@
     "updated_at": "2020-09-06T00:25:23.367Z",
     "displayImage": {
       "id": 9,
-      "name": "intro 1.png",
+      "name": "tr_1.png",
       "alternativeText": "",
       "caption": "",
       "width": 833,
       "height": 832,
       "formats": {
         "thumbnail": {
-          "name": "thumbnail_intro 1.png",
+          "name": "tr_1.png",
           "hash": "thumbnail_intro_1_dd0c12d834",
           "ext": ".png",
           "mime": "image/png",
