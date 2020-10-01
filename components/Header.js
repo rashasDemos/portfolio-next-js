@@ -7,22 +7,24 @@ import styled from "@emotion/styled";
 export function Logo() {
   return (
     <Box as={"span"} fontSize={30} color="#1F282F">
-     Rasha Rahman
+      Rasha Rahman
     </Box>
   );
 }
 
 export default function Header({ headlines, setGenreSelection }) {
-  const HeaderStyled = styled.div`a {
-    text-decoration: none;
-    color: unset;
-  }
-  
-  a:hover {
-    color: navy;
-  }`
+  const HeaderStyled = styled.div`
+    a {
+      text-decoration: none;
+      color: unset;
+    }
+
+    a:hover {
+      color: navy;
+    }
+  `;
   var rand = headlines && Math.round(Math.random() * headlines.length);
-  rand && headlines[rand] && console.log(rand, headlines[rand])
+  rand && headlines[rand] && console.log(rand, headlines[rand]);
   const router = useRouter();
 
   const [firstTime, setFirstTime] = useState(
@@ -61,12 +63,15 @@ export default function Header({ headlines, setGenreSelection }) {
       mr={3}
     >
       <Box flexDirection="row" alignItems="center" maxWidth={640}>
-        <Box onClick={() => {
-
-          setGenreSelection && setGenreSelection('resume')
-          setGenreSelection ? router.push('/?p=resume', '/') : router.push('/')
-          }} >
-        <Logo />
+        <Box
+          onClick={() => {
+            setGenreSelection && setGenreSelection("resume");
+            setGenreSelection
+              ? router.push("/?p=resume", "/")
+              : router.push("/");
+          }}
+        >
+          <Logo />
         </Box>
 
         {router && router.query.slug && (
@@ -81,9 +86,22 @@ export default function Header({ headlines, setGenreSelection }) {
             </Box>
 
             <Box>
-        <HeaderStyled>
-        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" className="twitter-share-button" data-text="I love this project on rasha.world!" data-via="raaahhh_sha" data-show-count="false">Share This</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </HeaderStyled>
+              <HeaderStyled>
+                <a
+                  href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+                  className="twitter-share-button"
+                  data-text="I love this project on rasha.world!"
+                  data-via="raaahhh_sha"
+                  data-show-count="false"
+                >
+                  Share This
+                </a>
+                <script
+                  async
+                  src="https://platform.twitter.com/widgets.js"
+                  charset="utf-8"
+                ></script>
+              </HeaderStyled>
             </Box>
           </Flex>
         )}
