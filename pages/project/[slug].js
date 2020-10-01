@@ -3,6 +3,7 @@ import { useQuery } from "react-query";
 import { Box } from "rebass";
 import ReactMarkdown from "react-markdown";
 import Header from "../../components/Header";
+import { NextSeo } from 'next-seo'
 
 const MainProjectWindow = ({ post }) => {
   const router = useRouter();
@@ -21,6 +22,33 @@ const MainProjectWindow = ({ post }) => {
       justifyContent="center"
       alignItems="center"
     >
+        <NextSeo
+      title={filterData ? `"` + filterData[0].headline.toUpperCase() + `"` + " by Rasha" : 'Projects'}
+      description={"Rasha Rahman's Project Desc: " + filterData[0].desc}
+      canonical="https://www.rasha.world/"
+      openGraph={{
+        url: 'https://www.rasha.world',
+        title: `"` + router.query.slug + `"` + " by Rasha" ,
+        description: "Rasha Rahman's Project Desc: " + filterData[0].desc,
+        // images: [
+        //   {
+        //     url: 'https://www.example.ie/og-image-01.jpg',
+        //     width: 800,
+        //     height: 600,
+        //     alt: 'Og Image Alt',
+        //   },
+        //   {
+        //     url: 'https://www.example.ie/og-image-02.jpg',
+        //     width: 900,
+        //     height: 800,
+        //     alt: 'Og Image Alt Second',
+        //   },
+        //   { url: 'https://www.example.ie/og-image-03.jpg' },
+        //   { url: 'https://www.example.ie/og-image-04.jpg' },
+        // ],
+        site_name: 'Rasha.World',
+      }}
+    />
       <Box width={4 / 16}>
         <Header headlines={headlines} currentSlug={filterData.slug} />
       </Box>

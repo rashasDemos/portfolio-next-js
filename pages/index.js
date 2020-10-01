@@ -7,6 +7,7 @@ import Header from "../components/Header";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import styled from "@emotion/styled";
+import { NextSeo } from 'next-seo'
 
 export default function Index() {
   var rooter = useRouter();
@@ -16,6 +17,7 @@ export default function Index() {
   if (rooter.asPath) {
     return (
       <MenuProvider root={rooter}>
+        
         <HomePage />
       </MenuProvider>
     );
@@ -56,28 +58,54 @@ const HomePage = memo(() => {
   );
   const socialLinks = [
     {
-      id: '1',
-      title: 'E-Mail',
-      url: 'mailto:rasha.r.rahman@gmail.com'
+      id: "1",
+      title: "E-Mail",
+      url: "mailto:rasha.r.rahman@gmail.com",
     },
     {
-      id: '2',
-      title: 'Twitter',
-      url: 'https://www.twitter.com/raaahhh_sha'
+      id: "2",
+      title: "Twitter",
+      url: "https://www.twitter.com/raaahhh_sha",
     },
     {
-      id: '3',
-      title: 'Github',
-      url: 'https://github.com/rashasDemos'
-    }
-  ]
+      id: "3",
+      title: "Github",
+      url: "https://github.com/rashasDemos",
+    },
+  ];
   return (
     <Box
       sx={{
         minHeight: "100vh",
       }}
     >
-      
+        <NextSeo
+      title={selectedGenres === 'projects' ? `Rasha's ` + selectedGenres[0].toUpperCase() + selectedGenres.substring(1,selectedGenres.length): `Rasha's World`}
+      description="This is resume and portfolio website for Rasha Rahman who is a front end web developer from Los Angeles."
+      canonical="https://www.rasha.world/"
+      openGraph={{
+        url: 'https://www.rasha.world',
+        title: selectedGenres === 'projects' ? `Rasha's ` + selectedGenres[0].toUpperCase() + selectedGenres.substring(1,selectedGenres.length): `Rasha's World`,
+        description: 'This is resume and portfolio website for Rasha Rahman who is a front end web developer from Los Angeles.',
+        // images: [
+        //   {
+        //     url: 'https://www.example.ie/og-image-01.jpg',
+        //     width: 800,
+        //     height: 600,
+        //     alt: 'Og Image Alt',
+        //   },
+        //   {
+        //     url: 'https://www.example.ie/og-image-02.jpg',
+        //     width: 900,
+        //     height: 800,
+        //     alt: 'Og Image Alt Second',
+        //   },
+        //   { url: 'https://www.example.ie/og-image-03.jpg' },
+        //   { url: 'https://www.example.ie/og-image-04.jpg' },
+        // ],
+        site_name: 'Rasha.World',
+      }}
+    />
       <div className="container">
         {/* <Head>
        <title>Create Next App</title>
@@ -89,32 +117,32 @@ const HomePage = memo(() => {
             <GenreSelector />
           </Flex>
           <Flex>
-            <Box as="sub" pl={1} mx={2.5} mt={0}>Front End Developer With A Psych Degree</Box>
+            <Box as="sub" pl={1} mx={2.5} mt={0}>
+              Front End Developer With A Psych Degree
+            </Box>
           </Flex>
           <Flex>
             <Box mx={2.5} mt={3} mb={1}>
               <Flex justifyContent="space-around" alignItems="center">
-                {socialLinks.map(x => 
-                   <Box
-                   backgroundColor={"#1F282F"}
-                   onClick={() =>
-                     window.location.assign(x.url)
-                   }
-                   sx={{
-                     borderRadius: 5,
-                     ":hover": {
-                       color: "lightblue",
-                       cursor: "pointer",
-                     },
-                   }}
-                   color={"white"}
-                   p={1}
-                   mr={2}
-                   as="h3"
-                 >
-                   {x.title}
-                 </Box>
-                )}
+                {socialLinks.map((x) => (
+                  <Box
+                    backgroundColor={"#1F282F"}
+                    onClick={() => window.location.assign(x.url)}
+                    sx={{
+                      borderRadius: 5,
+                      ":hover": {
+                        color: "lightblue",
+                        cursor: "pointer",
+                      },
+                    }}
+                    color={"white"}
+                    p={1}
+                    mr={2}
+                    as="h3"
+                  >
+                    {x.title}
+                  </Box>
+                ))}
                 <Box mr={2} as="h3">
                   -
                 </Box>
@@ -127,18 +155,14 @@ const HomePage = memo(() => {
                 <Box as="h3">Currently @ UCLA</Box>
               </Flex>
             </Box>
-            
           </Flex>
-         <Box pl={2}>
-         ---
-         </Box>
+          <Box pl={2}>---</Box>
         </Box>
         <Flex px={40}>
           <GenresSelected />
         </Flex>
         <style jsx>{`
           .container {
-
             padding: 1rem 0.5rem;
             justify-content: center;
             display: flex;
@@ -296,9 +320,8 @@ function GenresSelected() {
   const [searchedData, setSearchedData] = useState();
 
   const InputStyled = styled.div`
-  text-decoration: none;  
-  
-  `
+    text-decoration: none;
+  `;
   const filteredArray = ["music"];
   const filteredData = null;
 
@@ -601,7 +624,6 @@ function GenresSelected() {
                     as={"h3"}
                     key={x.id}
                     my={3}
-
                     sx={{
                       borderRadius: 10,
                       backgroundColor: i % 2 === 0 ? "#78909C10" : "#CFD8DC15",
@@ -614,26 +636,25 @@ function GenresSelected() {
                         href="project/[slug].js"
                         as={`project/${x.slug}`}
                       >
-                        <InputStyled>
-                 
-                        <a>
-                          {" "}
-                          <Box
-                            sx={{
-                              textDecoration: "underline",
-                              ":hover": {
-                                backgroundColor: "#1F282F",
-                                color: "gold",
-                                width: "50%",
-                                cursor: "pointer",
-                              },
-                            }}
-                            as="h1"
-                            my={1}
-                          >
-                            {x.headline}
-                          </Box>
-                        </a>
+                        <InputStyled key={i}>
+                          <a>
+                            {" "}
+                            <Box
+                              sx={{
+                                textDecoration: "underline",
+                                ":hover": {
+                                  backgroundColor: "#1F282F",
+                                  color: "gold",
+                                  width: "50%",
+                                  cursor: "pointer",
+                                },
+                              }}
+                              as="h1"
+                              my={1}
+                            >
+                              {x.headline}
+                            </Box>
+                          </a>
                         </InputStyled>
                       </Link>
                       <Box my={1} ml={10}>
@@ -756,4 +777,3 @@ function GenreSelector() {
     </Flex>
   );
 }
-

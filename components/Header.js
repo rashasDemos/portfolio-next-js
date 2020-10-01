@@ -53,8 +53,9 @@ export default function Header({ headlines, setGenreSelection }) {
     >
       <Box flexDirection="row" alignItems="center" maxWidth={640}>
         <Box onClick={() => {
-          setGenreSelection('resume')
-          router.push('/?p=resume', '/')
+
+          setGenreSelection && setGenreSelection('resume')
+          setGenreSelection ? router.push('/?p=resume', '/') : router.push('/')
           }} >
         <Logo />
         </Box>
