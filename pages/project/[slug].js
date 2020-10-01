@@ -64,7 +64,7 @@ const MainProjectWindow = ({ post }) => {
           flexDirection: "column",
         }}
       >
-          <img src={process.env.domain + 'images/' + filterData[0].displayImage.name} key={filterData[0].headline} width="100%" style={{
+          <img src={process.env.production.domain + 'images/' + filterData[0].displayImage.name} key={filterData[0].headline} width="100%" style={{
               borderRadius: 10
           }} />
       </Box>
@@ -112,7 +112,7 @@ export default MainProjectWindow;
 export async function getStaticPaths(context) {
   // params contains the post `id`.
   // If the route is like /posts/1, then params.id is 1
-  const res = await fetch(`${process.env.projects + 'projects.json'}`);
+  const res = await fetch(`${process.env.production.projects + 'projects.json'}`);
   const post = await res.json();
   const paths = post.map((post) => `/project/${post.slug}`);
 
@@ -124,7 +124,7 @@ export async function getStaticProps(context) {
   // params contains the post `id`.
   console.log("x", context);
   // If the route is like /posts/1, then params.id is 1
-  const res = await fetch(`${process.env.projects + 'projects.json'}`);
+  const res = await fetch(`${process.env.production.projects + 'projects.json'}`);
   const post = await res.json();
 
   // Pass post data to the page via props

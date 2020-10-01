@@ -10,7 +10,7 @@ import styled from "@emotion/styled";
 import { NextSeo } from 'next-seo'
 
 export default function Index() {
-    console.log(process.env.domain, process.env.title, process.env.projects)
+    console.log(process.env.production.domain, process.env.production.title, process.env.production.projects)
   var rooter = useRouter();
   useEffect(() => {
     console.log(rooter);
@@ -293,7 +293,7 @@ const HomePage = memo(() => {
             padding: 0;
             margin: 0;
             min-height: 98vh;
-            background-image: url("${process.env.domain + `so-white.png`}");
+            background-image: url("${process.env.production.domain + `so-white.png`}");
             background-repeat: repeat;
             font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
               Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
@@ -710,7 +710,7 @@ function GenresSelected() {
 
 async function fetchPage(selectedGenres) {
 
-  const res = await fetch(`${process.env.projects + `/${selectedGenres}.json`}`);
+  const res = await fetch(`${process.env.production.projects + `/${selectedGenres}.json`}`);
   const data = await res.json();
   return data;
 }
