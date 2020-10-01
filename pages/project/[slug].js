@@ -112,7 +112,7 @@ export default MainProjectWindow;
 export async function getStaticPaths(context) {
   // params contains the post `id`.
   // If the route is like /posts/1, then params.id is 1
-  const res = await fetch(`${'/projects.json'}`);
+  const res = await fetch('/projects.json');
   const post = await res.json();
   const paths = post.map((post) => `/project/${post.slug}`);
 
@@ -124,7 +124,7 @@ export async function getStaticProps(context) {
   // params contains the post `id`.
   console.log("x", context);
   // If the route is like /posts/1, then params.id is 1
-  const res = await fetch(`${'/projects.json'}`);
+  const res = await fetch('/projects.json');
   const post = await res.json();
 
   // Pass post data to the page via props
