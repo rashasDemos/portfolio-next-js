@@ -7,7 +7,7 @@ import styled from "@emotion/styled";
 export function Logo() {
   return (
     <Box as={"span"} fontSize={30} color="#1F282F">
-      Rasha's World
+     Rasha Rahman
     </Box>
   );
 }
