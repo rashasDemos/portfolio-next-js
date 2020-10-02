@@ -399,31 +399,29 @@ function GenresSelected() {
           </Box>
           <Flex flexWrap="wrap">
             {data &&
-              data[0].Education.map((x) => (
-                <Box as={"h3"} key={x.id}>
+              data[0].Education.map((x, i) => (
+                <Box as={"h3"} key={x.id} width={960}>
                   <Flex as="ul" flexDirection="column">
                     <Box my={1}>
                       {" "}
                       <Box
                         sx={{
-                          fontWeight: "bolder",
+                          fontWeight: "bold",
+                          color: '#C4C4C4'
                         }}
                       >
                         School
                       </Box>{" "}
                       {x.schoolName}
                     </Box>
-                    <Box
-                      mb={1}
-                      sx={{
-                        fontWeight: "normal",
-                        textAlign: "right",
-                      }}
-                    >
+                    <Box mb={1}   sx={{
+                        fontWeight: "450",
+                      }}>
                       {" "}
                       <Box
                         sx={{
                           fontWeight: "bold",
+                          color: '#C4C4C4'
                         }}
                       >
                         Degree
@@ -434,13 +432,13 @@ function GenresSelected() {
                       mb={3}
                       sx={{
                         fontWeight: "normal",
-                        textAlign: "right",
                       }}
                     >
                       {" "}
                       <Box
                         sx={{
                           fontWeight: "bold",
+                          color: '#C4C4C4'
                         }}
                       >
                         Time Spent
@@ -463,57 +461,50 @@ function GenresSelected() {
                       {" "}
                       <Box
                         sx={{
-                          fontWeight: "bolder",
+                          fontWeight: "bold",
+                          color: '#C4C4C4'
                         }}
                       >
                         Field
                       </Box>{" "}
                       {x.field}
                     </Box>
-                    <Box
-                      mb={1}
-                      sx={{
-                        fontWeight: "normal",
-                        textAlign: "right",
-                      }}
-                    >
+                    <Box mb={1}   sx={{
+                        fontWeight: "450",
+                      }}>
                       {" "}
                       <Box
                         sx={{
-                          fontWeight: "bolder",
+                          fontWeight: "bold",
+                          color: '#C4C4C4'
                         }}
                       >
                         Subfield
                       </Box>{" "}
                       {x.subfields}
                     </Box>
-                    <Box
-                      mb={1}
-                      sx={{
-                        fontWeight: "normal",
-                        textAlign: "right",
-                      }}
-                    >
+                    <Box mb={1}   sx={{
+                        fontWeight: "450",
+                      }}>
                       {" "}
                       <Box
                         sx={{
-                          fontWeight: "bolder",
+                          fontWeight: "bold",
+                          color: '#C4C4C4'
                         }}
                       >
                         Experience
                       </Box>{" "}
                       {x.experience}
                     </Box>
-                    <Box
-                      mb={1}
+                    <Box  mb={3}
                       sx={{
                         fontWeight: "normal",
-                        textAlign: "right",
-                      }}
-                    >
+                      }}>
                       <Box
                         sx={{
-                          fontWeight: "bolder",
+                          fontWeight: "bold",
+                          color: '#C4C4C4'
                         }}
                       >
                         Tools
@@ -536,73 +527,63 @@ function GenresSelected() {
                       {" "}
                       <Box
                         sx={{
-                          fontWeight: "bolder",
+                          fontWeight: "bold",
+                          color: '#C4C4C4'
                         }}
                       >
                         Company
                       </Box>{" "}
                       {x.company}
                     </Box>
-                    <Box
-                      mb={1}
-                      sx={{
-                        fontWeight: "normal",
-                        textAlign: "right",
-                      }}
-                    >
+                    <Box mb={1}   sx={{
+                        fontWeight: "450",
+                      }}>
                       {" "}
                       <Box
                         sx={{
-                          fontWeight: "bolder",
+                          fontWeight: "bold",
+                          color: '#C4C4C4'
                         }}
                       >
                         Job Title
                       </Box>{" "}
                       {x.jobTitle}
                     </Box>
-                    <Box
-                      mb={1}
-                      sx={{
-                        fontWeight: "normal",
-                        textAlign: "right",
-                      }}
-                    >
+                    <Box mb={1}   sx={{
+                        fontWeight: "450",
+                      }}>
                       {" "}
                       <Box
                         sx={{
-                          fontWeight: "bolder",
+                          fontWeight: "bold",
+                          color: '#C4C4C4'
                         }}
                       >
                         Time Spent
                       </Box>{" "}
                       {x.timeSpent}
                     </Box>
-                    <Box
-                      mb={1}
-                      sx={{
-                        fontWeight: "normal",
-                        textAlign: "right",
-                      }}
-                    >
+                    <Box mb={1}   sx={{
+                        fontWeight: "450",
+                      }}>
                       <Box
                         sx={{
-                          fontWeight: "bolder",
+                          fontWeight: "bold",
+                          color: '#C4C4C4'
                         }}
                       >
                         Description
                       </Box>
                       {x.mainDesc}
                     </Box>
-                    <Box
-                      mb={1}
+                    <Box mb={3}
                       sx={{
                         fontWeight: "normal",
-                        textAlign: "right",
-                      }}
-                    >
+                      }}>
                       <Box
                         sx={{
-                          fontWeight: "bolder",
+                          fontWeight: "bold",
+                          color: '#C4C4C4'
                         }}
                       >
                         {x.Responsibilities[0] && "Responsibilities"}
