@@ -3,8 +3,8 @@ import { useQuery } from "react-query";
 import { Box } from "rebass";
 import ReactMarkdown from "react-markdown";
 import Header from "../../components/Header";
-import { NextSeo } from 'next-seo'
-import fetch from 'isomorphic-unfetch'
+import { NextSeo } from "next-seo";
+import fetch from "isomorphic-unfetch";
 
 const MainProjectWindow = ({ post }) => {
   const router = useRouter();
@@ -23,34 +23,38 @@ const MainProjectWindow = ({ post }) => {
       justifyContent="center"
       alignItems="center"
     >
-        <NextSeo
-      title={filterData ? `"` + filterData[0].headline.toUpperCase() + `"` + " by Rasha" : 'Projects'}
-      description={"Rasha Rahman's Project Desc: " + filterData[0].desc}
-      canonical="https://www.rasha.world/"
-      openGraph={{
-        url: 'https://www.rasha.world',
-        title: `"` + router.query.slug + `"` + " by Rasha" ,
-        description: "Rasha Rahman's Project Desc: " + filterData[0].desc,
-        // images: [
-        //   {
-        //     url: 'https://www.example.ie/og-image-01.jpg',
-        //     width: 800,
-        //     height: 600,
-        //     alt: 'Og Image Alt',
-        //   },
-        //   {
-        //     url: 'https://www.example.ie/og-image-02.jpg',
-        //     width: 900,
-        //     height: 800,
-        //     alt: 'Og Image Alt Second',
-        //   },
-        //   { url: 'https://www.example.ie/og-image-03.jpg' },
-        //   { url: 'https://www.example.ie/og-image-04.jpg' },
-        // ],
-        site_name: 'Rasha.World',
-      }}
-    />
-    
+      <NextSeo
+        title={
+          filterData
+            ? `"` + filterData[0].headline.toUpperCase() + `"` + " by Rasha"
+            : "Projects"
+        }
+        description={"Rasha Rahman's Project Desc: " + filterData[0].desc}
+        canonical="https://www.rasha.world/"
+        openGraph={{
+          url: "https://www.rasha.world",
+          title: `"` + router.query.slug + `"` + " by Rasha",
+          description: "Rasha Rahman's Project Desc: " + filterData[0].desc,
+          // images: [
+          //   {
+          //     url: 'https://www.example.ie/og-image-01.jpg',
+          //     width: 800,
+          //     height: 600,
+          //     alt: 'Og Image Alt',
+          //   },
+          //   {
+          //     url: 'https://www.example.ie/og-image-02.jpg',
+          //     width: 900,
+          //     height: 800,
+          //     alt: 'Og Image Alt Second',
+          //   },
+          //   { url: 'https://www.example.ie/og-image-03.jpg' },
+          //   { url: 'https://www.example.ie/og-image-04.jpg' },
+          // ],
+          site_name: "Rasha.World",
+        }}
+      />
+
       <Box mt={3} width={4 / 16}>
         <Header headlines={headlines} currentSlug={filterData.slug} />
       </Box>
@@ -64,9 +68,14 @@ const MainProjectWindow = ({ post }) => {
           flexDirection: "column",
         }}
       >
-          <img src={'/images/' + filterData[0].displayImage.name} key={filterData[0].headline} width="100%" style={{
-              borderRadius: 10
-          }} />
+        <img
+          src={"/images/" + filterData[0].displayImage.name}
+          key={filterData[0].headline}
+          width="100%"
+          style={{
+            borderRadius: 10,
+          }}
+        />
       </Box>
       <Box
         width={10 / 16}
@@ -98,11 +107,12 @@ const MainProjectWindow = ({ post }) => {
           <ReactMarkdown source={filterData[0].longDesc} />
         </Box>
         <Box as="ul" mb={3}>
-         Tech Used:
-         {filterData[0].technologies.map((x,i) => <li key={i}>{x.Title}</li>)}
+          Tech Used:
+          {filterData[0].technologies.map((x, i) => (
+            <li key={i}>{x.Title}</li>
+          ))}
         </Box>
       </Box>
-
     </Box>
   );
 };
@@ -112,7 +122,9 @@ export default MainProjectWindow;
 export async function getStaticPaths(context) {
   // params contains the post `id`.
   // If the route is like /posts/1, then params.id is 1
-  const res = await fetch('https://raw.githubusercontent.com/rashasDemos/portfolio-next-js/master/public/%40api/projects.json');
+  const res = await fetch(
+    "https://raw.githubusercontent.com/rashasDemos/portfolio-next-js/master/public/%40api/projects.json"
+  );
   const post = await res.json();
   const paths = post.map((post) => `/project/${post.slug}`);
 
@@ -124,7 +136,9 @@ export async function getStaticProps(context) {
   // params contains the post `id`.
   console.log("x", context);
   // If the route is like /posts/1, then params.id is 1
-  const res = await fetch('https://raw.githubusercontent.com/rashasDemos/portfolio-next-js/master/public/%40api/projects.json');
+  const res = await fetch(
+    "https://raw.githubusercontent.com/rashasDemos/portfolio-next-js/master/public/%40api/projects.json"
+  );
   const post = await res.json();
 
   // Pass post data to the page via props

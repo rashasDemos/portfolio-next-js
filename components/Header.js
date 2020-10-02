@@ -48,21 +48,20 @@ export default function Header({ headlines, setGenreSelection }) {
 
   return (
     <Flex
-      my={1}
-      p={1}
-      color={"rgb(5, 104, 143)"}
-      sx={{
-        textAlign: "center",
-        borderRadius: "10px",
-        cursor: "pointer",
-        fontWeight: "600",
-      }}
-      justifyContent="center"
-      alignItems="center"
-      textAlign="center"
-      mr={3}
+    width={['25vw','25vw','unset']}
+    my={1}
+    p={1}
+    color={"rgb(5, 104, 143)"}
+    sx={{
+      borderRadius: "10px",
+      cursor: "pointer",
+      fontWeight: "600",
+    }}  
+    justifyContent="center"
+
+    mr={3}
     >
-      <Box flexDirection="row" alignItems="center" maxWidth={640}>
+      <Box alignItems="center">
         <Box
           onClick={() => {
             setGenreSelection && setGenreSelection("resume");
@@ -76,16 +75,19 @@ export default function Header({ headlines, setGenreSelection }) {
 
         {router && router.query.slug && (
           <Flex
+          width="100%"
             flexDirection="row"
-            justifyContent="center"
+            justifyContent="space-between"
             alignItems="center"
             textAlign="center"
           >
-            <Box onClick={() => router.back()} mx={2}>
+            <Box width={2/5} onClick={() => router.back()}>
               Go Back
             </Box>
+          <Box  width={1/5} >
 
-            <Box>
+          </Box>
+            <Box  width={2/5} >
               <HeaderStyled>
                 <a
                   href="https://twitter.com/share?ref_src=twsrc%5Etfw"

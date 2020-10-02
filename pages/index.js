@@ -7,10 +7,9 @@ import Header from "../components/Header";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import styled from "@emotion/styled";
-import { NextSeo } from 'next-seo'
+import { NextSeo } from "next-seo";
 
 export default function Index() {
-
   var rooter = useRouter();
   useEffect(() => {
     console.log(rooter);
@@ -18,7 +17,6 @@ export default function Index() {
   if (rooter.asPath) {
     return (
       <MenuProvider root={rooter}>
-        
         <HomePage />
       </MenuProvider>
     );
@@ -80,55 +78,70 @@ const HomePage = memo(() => {
         minHeight: "100vh",
       }}
     >
-        <NextSeo
-      title={selectedGenres === 'projects' ? `Rasha's ` + selectedGenres[0].toUpperCase() + selectedGenres.substring(1,selectedGenres.length): `Rasha's World`}
-      description="This is resume and portfolio website for Rasha Rahman who is a front end web developer from Los Angeles."
-      canonical="https://www.rasha.world/"
-      openGraph={{
-        url: 'https://www.rasha.world',
-        title: selectedGenres === 'projects' ? `Rasha's ` + selectedGenres[0].toUpperCase() + selectedGenres.substring(1,selectedGenres.length): `Rasha's World`,
-        description: 'This is resume and portfolio website for Rasha Rahman who is a front end web developer from Los Angeles.',
-        // images: [
-        //   {
-        //     url: 'https://www.example.ie/og-image-01.jpg',
-        //     width: 800,
-        //     height: 600,
-        //     alt: 'Og Image Alt',
-        //   },
-        //   {
-        //     url: 'https://www.example.ie/og-image-02.jpg',
-        //     width: 900,
-        //     height: 800,
-        //     alt: 'Og Image Alt Second',
-        //   },
-        //   { url: 'https://www.example.ie/og-image-03.jpg' },
-        //   { url: 'https://www.example.ie/og-image-04.jpg' },
-        // ],
-        site_name: 'Rasha.World',
-      }}
-    />
+      <NextSeo
+        title={
+          selectedGenres === "projects"
+            ? `Rasha's ` +
+              selectedGenres[0].toUpperCase() +
+              selectedGenres.substring(1, selectedGenres.length)
+            : `Rasha's World`
+        }
+        description="This is resume and portfolio website for Rasha Rahman who is a front end web developer from Los Angeles."
+        canonical="https://www.rasha.world/"
+        openGraph={{
+          url: "https://www.rasha.world",
+          title:
+            selectedGenres === "projects"
+              ? `Rasha's ` +
+                selectedGenres[0].toUpperCase() +
+                selectedGenres.substring(1, selectedGenres.length)
+              : `Rasha's World`,
+          description:
+            "This is resume and portfolio website for Rasha Rahman who is a front end web developer from Los Angeles.",
+          // images: [
+          //   {
+          //     url: 'https://www.example.ie/og-image-01.jpg',
+          //     width: 800,
+          //     height: 600,
+          //     alt: 'Og Image Alt',
+          //   },
+          //   {
+          //     url: 'https://www.example.ie/og-image-02.jpg',
+          //     width: 900,
+          //     height: 800,
+          //     alt: 'Og Image Alt Second',
+          //   },
+          //   { url: 'https://www.example.ie/og-image-03.jpg' },
+          //   { url: 'https://www.example.ie/og-image-04.jpg' },
+          // ],
+          site_name: "Rasha.World",
+        }}
+      />
       <div className="container">
         {/* <Head>
        <title>Create Next App</title>
        <link rel="icon" href="/favicon.ico" />
        </Head> */}
-        <Box>
+        <Box p={3} sx={{
+          bg: '#4545452c',
+          borderRadius: 10
+          
+        }}>
           <Flex justifyContent="space-between" alignItems="center">
             <Header setGenreSelection={setGenreSelection} />
             <GenreSelector />
           </Flex>
           <Flex>
-            <Box as="sub" pl={1} mx={2.5} mt={0}>
+            <Box as="sub" pl={1}  mt={0}>
               Front End Developer With A Psych Degree
             </Box>
           </Flex>
           <Flex>
-            <Box mx={2.5} mt={3} mb={1}>
-              <Flex justifyContent="space-between" alignItems="center">
+            <Box mx={2.5} mt={1} mb={1}>
+              <Flex flexWrap="wrap" justifyContent="left" alignItems="center">
                 {socialLinks.map((x) => (
                   <Box
                     backgroundColor={"#1F282F"}
-                    
                     onClick={() => window.location.assign(x.url)}
                     sx={{
                       borderRadius: 5,
@@ -138,22 +151,25 @@ const HomePage = memo(() => {
                       },
                     }}
                     color={"white"}
-                    p={[0.5,1]}
-                    
+                    p={[0.5, 1]}
                     mr={2}
-                    as='h6'
+                    as="h6"
                   >
                     {x.title}
                   </Box>
                 ))}
-                <Box mr={2} as="h3" fontSize={['1em','0.7em','1em','1em','1em']}>
-                  - Based in Los Angeles - Currently @ UCLA
+                <Box
+                  ml={0.5}
+                  mt={1}
+                  as="h3"
+                  fontSize={["1em", "0.7em", "1em", "1em", "1em"]}
+                >
+                  Based in Los Angeles - Currently @ UCLA
                 </Box>
-               
               </Flex>
             </Box>
           </Flex>
-          <Box pl={2}>---</Box>
+
         </Box>
         <Flex px={40}>
           <GenresSelected />
@@ -381,7 +397,7 @@ function GenresSelected() {
           <Box my={10} as={"h1"}>
             My Education
           </Box>
-          <Flex>
+          <Flex flexWrap="wrap">
             {data &&
               data[0].Education.map((x) => (
                 <Box as={"h3"} key={x.id}>
@@ -397,22 +413,34 @@ function GenresSelected() {
                       </Box>{" "}
                       {x.schoolName}
                     </Box>
-                    <Box my={1}>
+                    <Box
+                      mb={1}
+                      sx={{
+                        fontWeight: "normal",
+                        textAlign: "right",
+                      }}
+                    >
                       {" "}
                       <Box
                         sx={{
-                          fontWeight: "bolder",
+                          fontWeight: "bold",
                         }}
                       >
                         Degree
                       </Box>{" "}
                       {x.major}
                     </Box>
-                    <Box my={1}>
+                    <Box
+                      mb={3}
+                      sx={{
+                        fontWeight: "normal",
+                        textAlign: "right",
+                      }}
+                    >
                       {" "}
                       <Box
                         sx={{
-                          fontWeight: "bolder",
+                          fontWeight: "bold",
                         }}
                       >
                         Time Spent
@@ -426,7 +454,7 @@ function GenresSelected() {
           <Box my={10} as={"h1"}>
             My Skills
           </Box>
-          <Flex>
+          <Flex flexWrap="wrap">
             {data &&
               data[0].Skillset.map((x) => (
                 <Box as={"h3"} key={x.id}>
@@ -442,7 +470,13 @@ function GenresSelected() {
                       </Box>{" "}
                       {x.field}
                     </Box>
-                    <Box my={1}>
+                    <Box
+                      mb={1}
+                      sx={{
+                        fontWeight: "normal",
+                        textAlign: "right",
+                      }}
+                    >
                       {" "}
                       <Box
                         sx={{
@@ -453,7 +487,13 @@ function GenresSelected() {
                       </Box>{" "}
                       {x.subfields}
                     </Box>
-                    <Box my={1}>
+                    <Box
+                      mb={1}
+                      sx={{
+                        fontWeight: "normal",
+                        textAlign: "right",
+                      }}
+                    >
                       {" "}
                       <Box
                         sx={{
@@ -464,7 +504,13 @@ function GenresSelected() {
                       </Box>{" "}
                       {x.experience}
                     </Box>
-                    <Box my={1}>
+                    <Box
+                      mb={1}
+                      sx={{
+                        fontWeight: "normal",
+                        textAlign: "right",
+                      }}
+                    >
                       <Box
                         sx={{
                           fontWeight: "bolder",
@@ -481,7 +527,7 @@ function GenresSelected() {
           <Box my={10} as={"h1"}>
             My Previous Work
           </Box>
-          <Flex>
+          <Flex flexWrap="wrap">
             {data &&
               data[0].Work.map((x) => (
                 <Box as={"h3"} key={x.id}>
@@ -497,7 +543,13 @@ function GenresSelected() {
                       </Box>{" "}
                       {x.company}
                     </Box>
-                    <Box my={1}>
+                    <Box
+                      mb={1}
+                      sx={{
+                        fontWeight: "normal",
+                        textAlign: "right",
+                      }}
+                    >
                       {" "}
                       <Box
                         sx={{
@@ -508,7 +560,13 @@ function GenresSelected() {
                       </Box>{" "}
                       {x.jobTitle}
                     </Box>
-                    <Box my={1}>
+                    <Box
+                      mb={1}
+                      sx={{
+                        fontWeight: "normal",
+                        textAlign: "right",
+                      }}
+                    >
                       {" "}
                       <Box
                         sx={{
@@ -519,7 +577,13 @@ function GenresSelected() {
                       </Box>{" "}
                       {x.timeSpent}
                     </Box>
-                    <Box my={1}>
+                    <Box
+                      mb={1}
+                      sx={{
+                        fontWeight: "normal",
+                        textAlign: "right",
+                      }}
+                    >
                       <Box
                         sx={{
                           fontWeight: "bolder",
@@ -529,7 +593,13 @@ function GenresSelected() {
                       </Box>
                       {x.mainDesc}
                     </Box>
-                    <Box my={1}>
+                    <Box
+                      mb={1}
+                      sx={{
+                        fontWeight: "normal",
+                        textAlign: "right",
+                      }}
+                    >
                       <Box
                         sx={{
                           fontWeight: "bolder",
@@ -537,9 +607,12 @@ function GenresSelected() {
                       >
                         {x.Responsibilities[0] && "Responsibilities"}
                       </Box>
-                      <ul style={{
-                        listStyleType: 'square'          
-                      }}>
+                      <ul
+                        style={{
+                          listStyleType: "square",
+                          float: "left",
+                        }}
+                      >
                         {x.Responsibilities.map((y) => (
                           <li key={y.id}>{y.task}</li>
                         ))}
@@ -554,20 +627,31 @@ function GenresSelected() {
       return pageData;
     case "projects":
       pageData = (
-        <Flex flexDirection={['column','row','row']}>
-          <Flex mr={75} sx={{
-            display: ['none', 'none', 'unset']
-          }} flexDirection="column">
+        <Flex flexWrap="wrap" flexDirection={["column", "row", "row"]}>
+          <Flex
+            mr={75}
+            sx={{
+              display: ["none", "unset", "unset"],
+            }}
+            flexDirection="row"
+          >
             {" "}
             <Box my={10} mt={3} as={"h1"}>
               Projects
             </Box>
             <Box my={10} as={"h5"}>
               <label>
-                Search
                 <input
+                  style={{
+                    marginLeft: 5,
+                  }}
                   onChange={(e) => handleSearch(e.target.value)}
                   type="text"
+                  placeholder={
+                    searchedData && searchedData.length > 1
+                      ? searchedData
+                      : "search here"
+                  }
                 ></input>
               </label>
             </Box>
@@ -623,14 +707,16 @@ function GenresSelected() {
                 .map((x, i) => (
                   <Box
                     as={"h3"}
+                    fontSize={["0.5em", "0.75em", "1em", "1em", "1em"]}
                     key={x.id}
                     my={3}
+                    px={2}
                     sx={{
                       borderRadius: 10,
                       backgroundColor: i % 2 === 0 ? "#78909C10" : "#CFD8DC15",
                     }}
                   >
-                    <Flex as="ul" flexDirection="column">
+                    <Flex flexDirection="column">
                       <Link
                         key={i}
                         {...(router.asPath === "/?p=projects" && "prefetch")}
@@ -709,8 +795,9 @@ function GenresSelected() {
 }
 
 async function fetchPage(selectedGenres) {
-
-  const res = await fetch(`${`https://raw.githubusercontent.com/rashasDemos/portfolio-next-js/master/public/%40api/${selectedGenres}.json`}`);
+  const res = await fetch(
+    `${`https://raw.githubusercontent.com/rashasDemos/portfolio-next-js/master/public/%40api/${selectedGenres}.json`}`
+  );
   const data = await res.json();
   return data;
 }
@@ -731,25 +818,27 @@ function GenreSelector() {
   const filteredarrmap = arr
     .filter((x, i) => i >= 0)
     .map((x, i) => (
-      <option
-        key={i}
-        value={x.slug}
-        label={`> ` + x.name.toLowerCase()}
-      ></option>
+      <option key={i} value={x.slug} label={`> ` + x.name.toLowerCase()}>
+        {x.slug}
+      </option>
     ));
-
-  function handleChange(e) {
-    setGenreSelection(e.target.value);
-    router.push("/#" + e.target.value, {
-      query: { p: e.target.value },
+  function handlePush(val) {
+    router.push("/#" + val, {
+      query: { p: val },
       shallow: true,
     });
   }
+  const handleChange = async () => {
+    const val = selectedGenres === arr[0].slug ? arr[1].slug : arr[0].slug;
+    setGenreSelection(val);
+    handlePush(val);
+  };
   return (
     <Flex>
-      <select
+      {/* <select
         style={{
           cursor: "pointer",
+          
           width: "200px",
           height: "80%",
           color: "white",
@@ -767,6 +856,7 @@ function GenreSelector() {
           backgroundColor: "#20272F",
         }}
         value={selectedGenres}
+        
         onChange={(e) =>
           e.target.value !== arr[0]
             ? // ?
@@ -774,8 +864,44 @@ function GenreSelector() {
             : setGenreSelection(defaultState)
         }
       >
-        {selectedGenres === defaultState ? filteredarrmap : filteredarrmap}
-      </select>
+  {selectedGenres === defaultState ? filteredarrmap : filteredarrmap}
+      </select> */}
+
+      <Box
+        py={2}
+        px={3}
+        sx={{
+          cursor: "pointer",
+
+          width: "140px",
+          height: "70%",
+          color: "white",
+          padding: "5px 10px",
+          display: "flex",
+          justifyItems: "center",
+          alignItems: "center",
+          fontSize: "1em",
+          fontWeight: "400",
+          textAlign: "center",
+          border: "1px solid #1F282F",
+          borderRadius: "10px",
+
+          appearance: "none",
+          backgroundColor: "#20272F",
+
+          ":hover": {
+            color: "white",
+            cursor: "pointer",
+          },
+        }}
+        onClick={handleChange}
+      >
+        <Box sx={{
+          textAlign: 'center'
+        }}>
+        {selectedGenres === "resume" ? "View Projects" : "View Resume"}
+        </Box>
+      </Box>
     </Flex>
   );
 }
